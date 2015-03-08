@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project_1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles/normal.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+    <center><h1>Supero Un.Ltd.</h1></center>
+	<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="index.html">Startseite</a></li>
+			<li><a href="helden.html">Helden</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="impressum">Impressum</a></li>
+			<li><a href="steckbriefe">Steckbriefe</a></li>
+			<li><a href="faq">FAQ</a></li>	
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+    
+    <section>
+        <div class="middle">
+            <h3>Beschreibung</h3>
+            <p>
+            Die Supero Un.Ltd. vermittelt Superhelden aus der Umgebung, die Menschen bei Aufgaben im Alltag helfen. Das Unternehmen ist an Sie herangetreten, um seinen Webauftritt Ueberarbeiten zu lassen. Wir bieten Ihnen zahlreiche beruehmteste und langlebigste Superhelden ueberhaupt, z.B. Spider-Man, die X-Men, Iron-Man, Thor, Hulk, usw, stammen aus dem legendaeren Haus der Ideen. Wenn Sie einen Superheld, den Sie brauchen, schon gefunden haben, koennen Sie sich gleich bewerben beim Ausfuellen des Kontakformulars
+            </p>
+            
+            
+        </div>
+        
+        
+        <div class="footer"><center><a href="index.html">&copy; Andrew Tristan 2015</a></center></div>
+    </section>
+    
+    
+</body>
+</html>
