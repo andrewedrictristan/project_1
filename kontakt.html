@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project_1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles/normal.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+<body>
+    <center><h1>Supero Un.Ltd.</h1></center>
+	<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="index.html">Startseite</a></li>
+			<li><a href="helden.html">Helden</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="impressum">Impressum</a></li>
+			<li><a href="steckbriefe">Steckbriefe</a></li>
+			<li><a href="faq">FAQ</a></li>	
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+    
+    <section>
+        <div class="middle">
+            <br>
+            <center>
+                <div style="width:635px" class="wmfg_layout_3">
+
+                        <form method="post" action="">
+
+                        <ul class="wmfg_questions">
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label">Anrede</label>
+                                <table class="wmfg_answers">
+                                    <tr class="wmfg_a">
+                                        <td class="wmfg_a_td"><input type="radio" class="wmfg_radio" name="anrede" value="herr" checked="checked" /></td>
+                                        <td><label class="wmfg_label_a" for="anrede_herr">Herr</label></td>
+                                    </tr>
+                                    <tr class="wmfg_a">
+                                        <td class="wmfg_a_td"><input type="radio" class="wmfg_radio" name="anrede" value="frau" /></td>
+                                        <td><label class="wmfg_label_a" for="anrede_frau">Frau</label></td>
+                                    </tr>
+                                </table>
+                            </li>
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label" for="vorname">Vorname</label>
+                                <input type="text" class="wmfg_text" name="vorname" id="vorname" value="" />
+                            </li>
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label" for="nachname">Nachname</label>
+                                <input type="text" class="wmfg_text" name="nachname" id="nachname" value="" />
+                            </li>
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label" for="email">Email</label>
+                                <input type="text" class="wmfg_text" name="email" id="email" value="" />
+                            </li>
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label" for="select_id">Liste von Helden</label>
+                                <select class="wmfg_select" name="select_name" id="select_id">
+                                    <option value="value 1">Aquaman</option>
+                                    <option value="value 2">Batman</option>
+                                    <option value="value 3">Captain America</option>
+                                </select>
+                            </li>
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label" for="betreff">Verrichtende Aufgabe</label>
+                                <input type="text" class="wmfg_text" name="betreff" id="betreff" value="" />
+                            </li>
+
+                            <li class="wmfg_q">
+                                <label class="wmfg_label" for="mitteilung">Mitteilung</label>
+                                <textarea class="wmfg_textarea" name="mitteilung" id="mitteilung" style="height:80px"></textarea>
+                            </li>
+
+                            <li class="wmfg_q">
+                                <input type="submit" class="wmfg_btn" name="senden" id="senden" value="Senden" />
+                            </li>
+
+                        </ul>
+
+                        </form>
+
+                    </div>
+            </center>
+        </div>
+        
+        
+        <div class="footer"><center><a href="index.html">&copy; Andrew Tristan 2015</a></center></div>
+    </section>
+    
+    
+</body>
+</html>

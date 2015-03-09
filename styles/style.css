@@ -1,3 +1,8 @@
+html{
+    min-height: 100%;
+    position: relative;
+}
+
 /* Clearfix */
 .clearfix:before,
 .clearfix:after {
@@ -84,7 +89,21 @@ nav a#pull {
 	  	width: 100%;
 	  	text-indent: 25px;
   	}
+    
+    body{
+        font-size: 40%;   
+    }
+    
+    .logo img{
+            width: 60%;
+            height: 60%;
+            margin-top: 20px;
+            margin-bottom: 90px;
+    }
+  
 }
+    
+
 
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 480px) {
@@ -125,6 +144,7 @@ nav a#pull {
 	}
 }
 
+/************************************************************* EDIT *************************************************************/
 
 
 /** BODY **/
@@ -134,10 +154,10 @@ nav a#pull {
 }
 
 .logo img{
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 90px;
 }
 
 /** footer **/
@@ -153,6 +173,7 @@ nav a#pull {
     height: 30px;
     width: 100%;
     margin-bottom: 0px;
+    clear: both;
 }
 
 .footer a{
@@ -168,4 +189,51 @@ nav a#pull {
 .tg img{
     height: 100px;
     width: 100px;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////*** FORMULAR ***//////////////////////////////////////////////////
+
+
+.wmfg_layout_3 { color: #ffffff;  }
+.wmfg_layout_3, table, .wmfg_textarea { font-family: Verdana, Geneva, sans-serif; font-size: 13px;margin-bottom: 50px; }
+.wmfg_layout_3 ul.wmfg_questions { list-style-type: none; margin: 0; padding: 15px; background-color:#95A498;
+-moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;
+-moz-box-shadow: 5px 5px 7px #888; -webkit-box-shadow: 5px 5px 7px #888; -webkit-border-bottom-right-radius: 15px;
+}
+.wmfg_layout_3 ul.wmfg_questions li.wmfg_q { margin: 15px 0; }
+.wmfg_layout_3 label.wmfg_label { display: block; margin: 0 0 10px 0; font-size:1.5em; color:#ffffff; }
+.wmfg_layout_3 table.wmfg_answers { width: 100%; _width: 97%; border-collapse: collapse; }
+.wmfg_layout_3 table.wmfg_answers { vertical-align: top; }
+.wmfg_layout_3 table.wmfg_answers td { padding: 2px; vertical-align: top; }
+.wmfg_layout_3 table.wmfg_answers td.wmfg_a_td { width: 25px; }
+.wmfg_layout_3 .wmfg_text { border: 1px solid #ccc; padding: 4px; font-size: 13px; color: #000000; width: 98.5%; 
+background-color: #ffffff;
+background:-webkit-gradient(linear,0 0,0 100%,from(#efefef),to(#fff));
+background:-moz-linear-gradient(top,#efefef,#fff);
+}
+.wmfg_layout_3 .wmfg_textarea { border: 1px solid #CCC; padding: 4px; font-size: 13px; color: #000000; width: 98.5%;
+background:-webkit-gradient(linear,0 0,0 100%,from(#efefef),to(#fff));
+background:-moz-linear-gradient(top,#efefef,#fff);
+background-color: #ffffff;
+}
+.wmfg_layout_3 .wmfg_select { 
+border:1px solid #CCCCCC; padding: 3px; font-size: 13px; color: #000000; margin: 0; width: 100%; _width: 97%;
+background-color: #ffffff;
+background:-webkit-gradient(linear,0 0,0 100%,from(#efefef),to(#fff));
+background:-moz-linear-gradient(top,#efefef,#fff);
+}
+.wmfg_layout_3 .wmfg_btn {
+border: 1px solid #ccc; cursor: pointer; font-weight: bold; font-size: 15px; padding: 6px; color: white; letter-spacing: 1px;
+-webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+-webkit-box-shadow: rgba(0,0,0,0.75) 0px 0px 3px; -moz-box-shadow: rgba(0,0,0,0.75) 0px 0px 3px; box-shadow: rgba(0,0,0,0.75) 0px 0px 3px;
+background: -webkit-gradient(linear, left top, left bottom, from(#718079), color-stop(0.5, #889A8E), color-stop(0.5, #889A8E), to(#718079)); 
+background: -moz-linear-gradient(top, #718079, #889A8E 50%, #889A8E 50%, #718079);
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#718079', endColorstr='#889A8E');
+}
+.wmfg_layout_3 .wmfg_btn:hover {background: -webkit-gradient(linear, left top, left bottom, from(#8B9892), color-stop(0.5, #A4B2A9), color-stop(0.5, #A4B2A9), to(#8B9892)); 
+background: -moz-linear-gradient(top, #8B9892, #A4B2A9 50%, #A4B2A9 50%, #8B9892);
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#8B9892', endColorstr='#A4B2A9');
 }
